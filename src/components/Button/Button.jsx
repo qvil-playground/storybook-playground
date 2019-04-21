@@ -7,6 +7,7 @@ const StyledButton = styled.button`
   border-radius: 5%;
   background: papayawhip;
   font-size: 1rem;
+  color: ${({ disabled }) => (disabled ? "gray" : "violet")};
 `;
 
 const Button = ({ children, ...others }) => {
